@@ -6,6 +6,7 @@ import VideoCard from './Components/Cards/VideoCard'
 import Header from './Components/Header'
 import Selling_banner from './Components/Selling_banner'
 import Shopify_footer from './Components/Shopify Footer/Shopify_footer'
+import Shopify_back_banner from './Components/Shopify_back_banner'
 import Step_img_with_text from './Components/Step Image With Text/Step_img_with_text'
 
 import VideoText from './Components/VideoWithtext/VideoText'
@@ -39,7 +40,9 @@ function App() {
    video_card_desc2="Do it all right from your pocket with the full-featured Shopify mobile app."
    video_src2="../src/assets/card-video-2.webm"
 />
+<Shopify_back_banner/>
 <Step_img_with_text section_heading="Start selling in no time"/>
+
 <Selling_banner/>
 <Shopify_footer/>
 

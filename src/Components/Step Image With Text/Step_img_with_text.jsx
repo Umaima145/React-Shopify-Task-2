@@ -71,7 +71,10 @@ const Step_img_with_text = ({ section_heading }) => {
   };
 
   return (
-    <Box
+    <Box sx={{
+      background:"#041e18"
+    }}>
+       <Box
       sx={{
         width: '100%',
         height: '100vh',
@@ -171,6 +174,8 @@ const Step_img_with_text = ({ section_heading }) => {
         }
       `}</style>
     </Box>
+    </Box>
+   
   );
 };
 
