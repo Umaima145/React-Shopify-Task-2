@@ -44,29 +44,11 @@ export default function PlanCard() {
   return (
   <div style={{
     background: "#02090A",
-    // borderRadius:"60px",
-    // position:"relative",
-    // top:"-56px"
+    
     
   }}>
-    <Box
-    sx={{
-      display: "flex",
-        justifyContent: "center",
-        alignItems:"end",
-        gap: "80px",
-        paddingBottom:"30px",
-        paddingTop:"50px"
-    }}
-    >
-     <Typography
-     sx={{
-      color:"white",
-      fontSize:"55px",
-      fontWeight:"300",
-      lineHeight:"1.1em"
-     }}
-     >
+    <Box class="card_container">
+     <Typography class="card-section-heading">
       For everyone from <br/> entrepreneurs to enterprise
       </Typography>
 
@@ -84,17 +66,7 @@ Millions of merchants of every size have collectively made <br/> over $1,000,000
 </Box>
 
 
-    <Box className='card-main'
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "30px",
-        alignItems: "baseline",
-        paddingTop: "50px",
-        background: "#02090A",
-        flexWrap: { xs: 'wrap', md: 'nowrap' }
-      }}
-    >
+    <Box className='card-main'>
      
       {cardData.map((card) => (
         <Card 

@@ -24,11 +24,7 @@ export default function VideoCard({
         paddingBottom: "100px",
       }}
     >
-      <Box
-        sx={{
-          paddingLeft: "100px",
-        }}
-      >
+      <Box class="videoCard-text-container">
         <Typography
           sx={{
             color: "#30DEEE",
@@ -40,25 +36,12 @@ export default function VideoCard({
           {sub_heading}
         </Typography>
 
-        <Typography
-          sx={{
-            color: "white",
-            fontSize: "55px",
-            fontWeight: "300",
-            paddingBottom: "50px",
-          }}
-        >
+        <Typography class="videoCard-section-heading">
           {main_sec_heading}
         </Typography>
       </Box>
 
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "1rem",
-        }}
-      >
+      <Box class="video-box">
         <Card
           sx={{
             maxWidth: 580,

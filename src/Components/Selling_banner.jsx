@@ -5,7 +5,8 @@ import React from 'react'
 const Selling_banner = () => {
   return (
     <>
-    <Box 
+    <Box
+    class="selling-banner-container" 
     sx={{
         background:"#02090a",
         padding:"40px 80px"
@@ -19,22 +20,8 @@ const Selling_banner = () => {
         }}
         >
             Online and in person</Typography>
-       <Box
-       sx={{
-        display:"flex",
-        justifyContent:"space-between",
-        alignItems:"baseline",
-        color:"#fff"
-       }}
-       >
-        <Typography
-        sx={{
-        fontSize:"55px",
-        fontWeight:"200",
-        lineHeight:"1"
-       
-        }}
-        >Sell here, there, and everywhere</Typography>
+       <Box class="selling-banner-textContainer">
+        <Typography class="selling-banner-heading">Sell here, there, and everywhere</Typography>
         <Typography
         sx={{
             color:"#9797a2",

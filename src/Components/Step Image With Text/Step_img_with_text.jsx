@@ -77,7 +77,7 @@ const Step_img_with_text = ({ section_heading }) => {
        <Box
       sx={{
         width: '100%',
-        height: '100vh',
+        height: '100%',
         backgroundImage: `
           linear-gradient(rgba(2, 8, 8, 0.5), transparent 20%, transparent 90%, rgba(2, 8, 8, 0.5)),
           radial-gradient(at 87% 84%, rgba(2, 8, 8, 0.9) 0, transparent 50%),
@@ -97,6 +97,7 @@ const Step_img_with_text = ({ section_heading }) => {
       }}
     >
       <Typography
+        class="step-section-heading"
         sx={{
           fontSize: '55px',
           color: 'white',
@@ -108,11 +109,12 @@ const Step_img_with_text = ({ section_heading }) => {
         {section_heading}
       </Typography>
 
-      <Box sx={{ display: 'flex', gap: '50px', justifyContent: 'center' }}>
+      <Box class="image-text-container">
         {/* Image Area */}
-        <Box sx={{ display: 'flex', gap: '20px' }}>
+        <Box class="selling-banner-img">
           {images.map((img) => (
             <Box
+              class="img-container"
               key={img.key}
               sx={{
                 width: '300px',
@@ -140,6 +142,7 @@ const Step_img_with_text = ({ section_heading }) => {
         <Box>
           {steps.map((step) => (
             <Typography
+              class="step-heading"
               key={step.id}
               onMouseEnter={() => handleStepHover(step.id)}
               onMouseLeave={() => handleStepHover(null)}
