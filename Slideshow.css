@@ -1,0 +1,97 @@
+.inner-shadow-container {
+  position: relative;
+   background-image: linear-gradient(145deg, #000a1e 57%, #000a1ee6 77%);
+  overflow: hidden;
+  color: white;
+}
+
+.inner-top-shadow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* height of the shadow area */
+  pointer-events: none;
+  box-shadow: inset 0 40px 60px -20px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+ 
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* doubled for loop */
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: slide-left 60s linear infinite;
+  filter: brightness(0.6) blur(1px);
+  transition: filter 0.3s;
+}
+
+.slide-container.paused .slide-image {
+  animation-play-state: paused;
+}
+.scroll-strip.paused .scroll-image {
+  animation-play-state: paused;
+}
+
+.spotlight {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 60%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  mix-blend-mode: lighten;
+}
+.scroll-strip {
+  position: relative;
+  width:200vw;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.scroll-image {
+  width: 100%;
+  height: 40vh;
+  background-repeat: repeat;
+  animation: scroll-left 60s linear infinite;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  background:#000a1e;
+  pointer-events: none;
+  z-index: 3;
+  mask-image: radial-gradient(circle 250px at var(--mouse-x) var(--mouse-y), transparent 0%, black 100%);
+  -webkit-mask-image: radial-gradient(circle 250px at var(--mouse-x) var(--mouse-y), transparent 0%, black 100%);
+  mask-repeat: no-repeat;
+  mask-size: 200% 200%;
+}
