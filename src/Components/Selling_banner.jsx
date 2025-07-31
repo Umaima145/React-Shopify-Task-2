@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from '@mui/material'
-import banner_img from '../assets/selling-banner.png'
+import banner_video from '../assets/customizer-video.webm'
 import React from 'react'
 
 const Selling_banner = () => {
@@ -32,7 +32,15 @@ const Selling_banner = () => {
         Get a stunning store that’s made to sell—whether you build from scratch or start fast with pre-built themes.</Typography>
        </Box>
        <Box>
-        <img src={banner_img} width={"100%"}/>
+        <video
+          src={banner_video}
+          width="100%"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ display: "block" }}
+        />
        </Box>
     </Box>
     </>
