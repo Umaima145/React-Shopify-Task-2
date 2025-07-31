@@ -4,6 +4,7 @@ import PlanCard from './Components/Cards/PlanCard'
 import VideoCard from './Components/Cards/VideoCard'
 
 import Header from './Components/Header'
+import Image_slideshow from './Components/Image_slideshow'
 import Selling_banner from './Components/Selling_banner'
 import Shopify_footer from './Components/Shopify Footer/Shopify_footer'
 import Shopify_back_banner from './Components/Shopify_back_banner'
@@ -44,6 +45,7 @@ function App() {
 <Step_img_with_text section_heading="Start selling in no time"/>
 
 <Selling_banner/>
+<Image_slideshow/>
 <Shopify_footer/>
 
     </>
