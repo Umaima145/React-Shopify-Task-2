@@ -35,7 +35,7 @@
   background-size: contain;
   animation: slide-left 60s linear infinite;
   filter: brightness(0.6) blur(1px);
-  transition: filter 0.3s;
+  transition: filter 0.2s ease;
 }
 
 .slide-container.paused .slide-image {
@@ -65,7 +65,7 @@
 
 .scroll-image {
   width: 100%;
-  height: 40vh;
+  height: 55vh;
   background-repeat: repeat;
   animation: scroll-left 60s linear infinite;
 }
@@ -94,4 +94,5 @@
   -webkit-mask-image: radial-gradient(circle 250px at var(--mouse-x) var(--mouse-y), transparent 0%, black 100%);
   mask-repeat: no-repeat;
   mask-size: 200% 200%;
+  transition: all 0.2s ease;
 }
